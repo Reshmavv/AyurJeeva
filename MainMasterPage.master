@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>AyurJeeva</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="mastercss/bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="mastercss/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		
+		<link href="mastercss/themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="mastercss/themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="mastercss/themes/css/main.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="mastercss/themes/js/jquery-1.7.2.min.js"></script>
+		<script src="mastercss/bootstrap/js/bootstrap.min.js"></script>				
+		<script src="mastercss/themes/js/superfish.js"></script>	
+		<!--<script src="mastercss/themes/js/jquery.scrolltotop.js"></script>-->
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+    <body>	
+        <form id="f1" runat="server">	
+		<div id="top-bar" class="container">
+			<div class="row">
+				<div class="span4">
+					
+						
+					
+				</div>
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="MainMasterAspx.aspx">Home</a></li>
+							<li><a href="userlogin.aspx">Login</a></li>					
+							<li><a href="userregistration.aspx">Register</a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu">
+				<div>				
+					<img src="mastercss/themes/images/ajurjeeva.png"  alt="">
+                        
+					<nav id="menu" class="pull-right">
+						
+					</nav>
+				</div>
+			</section>
+			<section  class="homepage-slider" id="home-slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="mastercss/themes/images/carousel/Dabur_Chyawanprash_1242_x_450.jpg" alt="" />
+						</li>
+						<li>
+							<img src="mastercss/themes/images/carousel/cadae16af2f0fb53f1b7c5d9ec0184bf5b14b2f3_WEB BANNER SEPT 2020 - 3.jpg" alt="" />
+							
+						</li>
+                        <li>
+							<img src="mastercss/themes/images/carousel/NYWOW00115argan hair oil banner 770x300.jpg" alt="" />
+						</li>
+					</ul>
+				</div>			
+			</section>
+            <br />
+            <br />
+              <br />
+            <br />
+            <br /><br />
+			<section class="header_text">
+				"Life (ayu) is the combination (samyoga) of body, senses, mind and reincarnating soul.  
+				<br/>Ayurveda is the most sacred science of life, beneficial to humans both in this world and the world beyond.”
+			</section>
+			<section class="main-content">
+				<div class="row">
+					<div class="span12">													
+						<div class="row">
+							<div class="span12">
+								<h4 class="title">
+									<span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+									</span>
+								</h4>
+                                 <asp:ContentPlaceHolder ID="mastercontent" runat="server">
+
+                         </asp:ContentPlaceHolder>
+							</div>						
+						</div>
+						<br/>
+						
+				</div>
+                    </div></section>							
+			
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3">
+						<h4>About Us</h4>
+						<ul class="nav">
+							<li>AyurJeeva is one of the top website for product avertisement</li>  
+							<li>Our major services include advertisement of Ayurvedic products,</li>
+							<li>provide home remedies for various kind of diseases. </li>
+							<li>We offer free service to users</li>
+							<li></li>							
+						</ul>					
+					</div>
+					<div class="span4">
+						<h4>Contact Us</h4>
+						<ul class="nav">
+							<li>AyurJeeva</li>
+							<li>email-ayurjeeva@gmail.</li>
+							<li>phone-+923713747</li>
+							<li>website-www.ayurjeeva.com</li>
+						</ul>
+					</div>
+					<div class="span4">
+						
+						"Life (ayu) is the combination (samyoga) of body, senses, mind and reincarnating soul.  
+				<br/>Ayurveda is the most sacred science of life, beneficial to humans both in this world and the world beyond.”
+						<span class="social_icons">
+							
+						</span>
+					</div>					
+				</div>	
+			</section>
+            <center>
+			<section id="copyright">
+				<span>Copyright 2013 AyurJeeva  All right reserved.</span>
+			</section>
+                </center></div>
+        
+		
+		<script src="mastercss/themes/js/common.js"></script>
+		<script src="mastercss/themes/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+		    $(function () {
+		        $(document).ready(function () {
+		            $('.flexslider').flexslider({
+		                animation: "fade",
+		                slideshowSpeed: 4000,
+		                animationSpeed: 600,
+		                controlNav: false,
+		                directionNav: true,
+		                controlsContainer: ".flex-container" // the container that holds the flexslider
+		            });
+		        });
+		    });
+		</script>
+            </form>
+    </body>
+</html>
